@@ -1,0 +1,31 @@
+---
+title: Blog
+# true if the page is included in the menu
+listed: true
+# true if the page is published
+published: true
+---
+{% extends 'layouts/simple' %}
+{% block content/header %}
+{% endblock %}
+{% block content/main %}
+
+{% editable_text main_content %}
+
+%h2 Blog
+%p Welcome to our blog!
+
+{% endeditable_text %}
+
+{% with_scope published_at.lte: now %}
+{% for entry in contents.blog_entries %}
+%article.blog-post-teaser
+  %header
+    %h1
+      %a{ href: "/blog-entries/{{ entry._slug }}" }{{ entry.title }}
+    %p published at {{ entry.published_at }}
+  %p {{ entry.teaser }}
+{% endfor %}
+{% endwith_scope %}
+
+{% endblock %}
