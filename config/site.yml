@@ -1,9 +1,9 @@
-name: DevsForChange
+name: "Devs For Change, Inc"
 locales: [en]
-domains: []
-timezone: UTC
-seo_title: 
-meta_keywords: 
-meta_description: 
-metafields: 
+domains: [devsforchange.org]
+timezone: CST
+seo_title: "Devs For Change, Inc"
+meta_keywords:
+meta_description:
+metafields:
 metafields_ui: {}
