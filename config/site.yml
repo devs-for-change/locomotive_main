@@ -1,7 +1,7 @@
 name: "Devs For Change, Inc"
 locales: [en]
 domains: [devsforchange.org]
-timezone: CST
+timezone: UTC
 seo_title: "Devs For Change, Inc"
 meta_keywords:
 meta_description:
