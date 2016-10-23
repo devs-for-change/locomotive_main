@@ -14,7 +14,7 @@ is_layout: true
 
     %link{href: "{{ 'favicon.png' | theme_image_url }}", rel: "shortcut icon"}
 
-    {{ 'bootstrap.css' | stylesheet_tag }}
+    {{ 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' | stylesheet_tag }}
     {{ 'application.css' | stylesheet_tag }}
     {{ 'theme.css' | stylesheet_tag }}
 
@@ -28,6 +28,6 @@ is_layout: true
 
     {% include 'footer' %}
 
-    {{ 'jquery.min.js' | javascript_tag }}
-    {{ 'bootstrap.min.js' | javascript_tag }}
+    {{ 'https://code.jquery.com/jquery-3.1.1.slim.min.js' | javascript_tag }}
+    {{ 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' | javascript_tag }}
     {{ 'application.js' | javascript_tag }}

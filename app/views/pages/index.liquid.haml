@@ -1,0 +1,43 @@
+---
+title: Home page
+slug: index
+position: 0
+listed: true
+published: true
+is_layout: false
+---
+{% extends 'layouts/simple' %}
+
+{% block content/main %}
+.row
+  .col-xs-12
+    {% editable_text main %}
+    %h2 Main Content
+    %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    {% endeditable_text %}
+  .col-xs-12
+    {% editable_text volunteer  %}
+    %h2 Volunteer blurb/testimonials
+    %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    {% endeditable_text %}
+  .col-xs-12
+    {% editable_text blong feed %}
+    %h2 Recent blog post feed (recent headline and intro)
+    %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+    {% endeditable_text %}
+  .col-xs-12
+    {% editable_text CTAs %}
+    %h2 Calls to action
+    %ul
+      %li Meet the team
+      %li Contact us
+    {% endeditable_text %}
+  .col-xs-12
+    %h2 Meet the team
+    %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+  .col-xs-12
+    %h2 Contact Form
+  .col-xs-12
+    %h2 Twitter Feed
+    %p Twitter feed
+{% endblock %}
