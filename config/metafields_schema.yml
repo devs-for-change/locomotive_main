@@ -1,1 +1,24 @@
---- {}
+---
+
+core:
+  label: Main Configurable Items
+  position: 0
+  fields:
+    twitter_feed:
+      label: Twitter Feed
+      hint: Url for Twitter feed
+      type: String
+      localized: false
+      position: 0
+    twitter_link:
+      label: Twitter Link
+      hint: Url for Twitter Link
+      type: String
+      localized: false
+      position: 1
+    facebook_link:
+      label: Facebook Link
+      hint: Url for Facebook link
+      type: String
+      localized: false
+      position: 2
