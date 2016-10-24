@@ -6,4 +6,8 @@ seo_title: "Devs For Change, Inc"
 meta_keywords:
 meta_description:
 metafields:
+  core:
+    twitter_feed: https://twitter.com
+    twitter_link: https://twitter.com
+    facebook_link: https://facebook.com
 metafields_ui: {}
