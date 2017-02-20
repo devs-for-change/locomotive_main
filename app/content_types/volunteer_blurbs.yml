@@ -1,0 +1,32 @@
+name: Volunteer blurbs
+slug: volunteer_blurbs
+description: Small introduction for volunteers
+label_field_name: name
+order_by: name
+
+display_settings:
+  seo: true
+  advanced: true
+  hidden: true
+
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    hint: Volunteer's name
+    localized: false
+
+- text:
+    label: Text
+    type: text
+    required: true
+    hint: Volunteer blurb
+    localized: false
+
+- image:
+    label: Icon
+    type: file
+    required: true
+    hint: Volunteer image
+    localized: false
