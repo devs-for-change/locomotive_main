@@ -1,0 +1,71 @@
+name: Contacts
+slug: contacts
+description: Website contact form responses
+label_field_name: name
+order_by: name
+
+display_settings:
+  seo: true
+  advanced: true
+  hidden: true
+
+fields:
+
+- form_source:
+    label: Form Source
+    type: string
+    required: true
+    hint: Is this a volunteer contact or a non-profit contact
+    localized: false
+    
+- name:
+    label: Name
+    type: string
+    required: true
+    hint: Applicant's name
+    localized: false
+
+- email:
+    label: Email Address
+    type: string
+    required: true
+    hint: Applicant's email address
+    localized: false
+
+- npo_name:
+    label: Non Profit Name
+    type: string
+    required: true
+    hint: Applicant's non-profit name
+    localized: false
+
+- phone:
+    label: Phone Number
+    type: string
+    required: true
+    hint: Applicant's phone number
+    localized: false
+
+- mission_and_goals:
+    label: Mission and Goals
+    type: text
+    required: true
+    hint: The mission and goals of the NPO
+    localized: false
+
+- interested_in:
+    label: Interested in
+    type: select
+    required: true
+    hint: Selection of interest
+    localized: false
+    select_options:
+      - New Website
+      - Information
+
+- image:
+    label: Icon
+    type: file
+    required: true
+    hint: Volunteer image
+    localized: false
