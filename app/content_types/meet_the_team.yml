@@ -1,0 +1,32 @@
+name: Meet The Team
+slug: meet_the_team
+description: Meet our glorious team!
+
+display_settings:
+  seo: true
+  advanced: false
+  hidden: false
+
+fields:
+- intro:
+    label: Intro Content
+    type: text
+    required: true
+    hint: What is this page about?
+    localized: false
+
+- members:
+    label: Members
+    type: one_to_many
+    required: true
+    hint: Those who are privledge enough that we call... members.
+    localized: false
+    class_name: team_members
+    ui_enabled: true
+
+- published_at:
+    label: Published at
+    type: date_time
+    required: false
+    hint: When the article was/will be published.
+    localized: false

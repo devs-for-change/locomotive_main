@@ -1,0 +1,35 @@
+name: Social Media Links
+slug: social_media_links
+description: A listing of professional social media links
+label_field_name: name
+order_by: team_member
+
+display_settings:
+  seo: true
+  advanced: true
+  hidden: true
+
+fields:
+- name:
+    label: Title
+    type: string
+    required: true
+    hint: Which site
+    localized: false
+
+- address:
+    label: Web Address
+    type: string
+    required: true
+    hint: Professional site
+    localized: false
+
+- team_member:
+    label: Team Membner
+    type: belongs_to
+    required: false
+    hint: Who am I linked to?
+    localized: false
+    class_name: members
+    inverse_of: social_media
+    ui_enabled: true

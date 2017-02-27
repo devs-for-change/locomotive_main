@@ -1,0 +1,56 @@
+name: Members
+slug: members
+description: Board and Team Members
+label_field_name: name
+order_by: name
+
+display_settings:
+  seo: true
+  advanced: false
+  hidden: false
+
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    hint: The name of the member
+    localized: false
+
+- is_board:
+    label: Board Member?
+    type: boolean
+    required: false
+    hint: Status of team member
+    localized: false
+
+- bio:
+    label: Biography
+    type: text
+    required: true
+    hint: Biography of member
+    localized: false
+
+- social_media:
+    label: Social Media Links
+    type: one_to_many
+    required: false
+    hint: Professional Social Media sites
+    localized: false
+    class_name: social_media_links
+    inverse_of: member
+    ui_enabled: true
+
+- bio_image:
+    label: Bio Image
+    type: file
+    required: false
+    hint: A teaser/headline image for this blog post
+    localized: false
+
+- website:
+    label: Professional Website/Portfolio
+    type: string
+    required: false
+    hint: Personal site or portfolio location
+    localized: false
